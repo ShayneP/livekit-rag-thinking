@@ -1,6 +1,6 @@
 # LiveKit RAG Voice Assistant Demo
 
-This demo showcases different approaches to handling the delay during RAG (Retrieval-Augmented Generation) lookups in a voice-enabled AI assistant. When users ask questions about LiveKit, the system needs time to search the knowledge base and generate responses. The demo provides three different methods to maintain user engagement during this process.
+This demo showcases different approaches to handling the delay during RAG (Retrieval-Augmented Generation) lookups in a voice-enabled AI assistant w/ Deepseek AI. When users ask questions about LiveKit, the system needs time to search the knowledge base and generate responses. The demo provides three different methods to maintain user engagement during this process.
 
 ## Features
 
@@ -15,9 +15,10 @@ This demo showcases different approaches to handling the delay during RAG (Retri
 ## Prerequisites
 
 - Python 3.10+
-- OpenAI API key
+- OpenAI API key (For embeddings)
+- Deepseek API key (LLM)
 - LiveKit API key and secret
-- Deepgram API Key
+- Deepgram API Key (STT)
 
 ## Setup
 
@@ -34,6 +35,7 @@ This demo showcases different approaches to handling the delay during RAG (Retri
 4. Create a `.env` file with your credentials:
    ```
    OPENAI_API_KEY=your_openai_api_key
+   DEEPSEEK_API_KEY=your_deepseek_api_key
    LIVEKIT_API_KEY=your_livekit_api_key
    LIVEKIT_API_SECRET=your_livekit_api_secret
    DEEPGRAM_API_KEY=your_deepgram_api_key

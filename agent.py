@@ -3,6 +3,7 @@ import pickle
 import asyncio
 import random
 import wave
+import os
 import numpy as np
 from typing import Annotated
 from pathlib import Path
@@ -160,7 +161,7 @@ async def entrypoint(ctx: JobContext) -> None:
         ),
         vad=silero.VAD.load(),
         stt=deepgram.STT(),
-        llm=openai.LLM(),
+        llm=openai.LLM(base_url="https://api.deepseek.com/v1", api_key=os.getenv("DEEPSEEK_API_KEY"), model="deepseek-chat"),
         tts=openai.TTS(),
         fnc_ctx=fnc_ctx,
     )
