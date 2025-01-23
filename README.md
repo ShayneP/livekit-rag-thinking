@@ -1,4 +1,4 @@
-# LiveKit RAG Voice Assistant Demo
+# LiveKit RAG Voice Assistant Demo w/ Deepseek
 
 This demo showcases different approaches to handling the delay during RAG (Retrieval-Augmented Generation) lookups in a voice-enabled AI assistant w/ Deepseek AI. When users ask questions about LiveKit, the system needs time to search the knowledge base and generate responses. The demo provides three different methods to maintain user engagement during this process.
 
